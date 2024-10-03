@@ -1,10 +1,6 @@
-[package]
-name = "app-context"
-version = "0.1.0"
-edition = "2021"
-publish = ["crates-io"]
+[workspace]
+members = [
+    "app-context-core", "app-context-derive", "app-context-example"]
+resolver = "2"
 
-[dependencies]
-thiserror="1"
-either="1"
-inventory="0.3"
+[workspace.dependencies]
