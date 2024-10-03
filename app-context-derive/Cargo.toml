@@ -1,0 +1,15 @@
+[package]
+name = "app-context-derive"
+version = "0.1.0"
+edition = "2021"
+publish = ["crates-io"]
+
+[lib]
+name="app_context_derive"
+proc-macro = true
+
+[dependencies]
+proc-macro2="1"
+quote="1"
+syn={version="2",features=["full","extra-traits"]}
+app-context-core={ path="../app-context-core" }

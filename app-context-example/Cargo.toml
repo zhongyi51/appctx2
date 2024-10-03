@@ -1,0 +1,8 @@
+[package]
+name = "app-context-example"
+version = "0.1.0"
+edition = "2021"
+publish = ["crates-io"]
+
+[dependencies]
+app-context-derive={ path = "../app-context-derive" }
